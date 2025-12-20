@@ -274,6 +274,7 @@ a{
     .brownMain, .brownShop, .brownrecipe {
         font-size: 50px;
         text-align: center;
+        letter-spacing: 1px;
     }
 
     .productcontainer {
