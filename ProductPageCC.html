@@ -1,49 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comfort Coffee - Product</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
     <div class="MainContainer">
 
+        <!-- Parallax Banner -->
         <div class="ParallaxContainer">
             <img class="logo" src="./Imgs/CCLogo.png">
         </div>
 
-
+        <!-- Content -->
         <div class="ContentContainer">
 
+            <!-- Navbar -->
             <div class="navbar">
                 <ul>
                     <li><a href="./MainPage.html">Home</a></li>
                     <li><a href="./ShopPage.html">Shop</a></li>
                     <li><a href="./RecipePage.html">Recipes</a></li>
                     <li><a href="./ContactUsPage.html">Contact</a></li>
+                    <li><a href="./CartPage.html">Cart</a></li>
                 </ul>
-
             </div>
 
+            <!-- Product Info -->
             <div class="contentproduct">
                 <h2 class="brownShop">Columbian Comfort</h2>
                 <div class="productcontainer">
+                    <!-- Product Image -->
                     <div class="cardproduct">
                         <img class="productpicture" src="./Imgs/Coffee1.webp" alt="coffee bag">
                     </div>
+
+                    <!-- Product Details -->
                     <div class="productcontainerright">
-                        <p class="Mainp">Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque
-                            faucibus ex sapien
-                            vitae pellentesque
-                            sem placerat. In id cursus mi pretium tellus duis convallis. Tempus leo eu aenean sed
-                            diam urna
-                            tempor. Pulvinar vivamus fringilla lacus nec metus bibendum egestas. Iaculis massa nisl
-                            malesuada
-                            lacinia integer nunc posuere. Ut hendrerit semper vel class aptent taciti sociosqu. Ad
-                            litora
-                            torquent per conubia nostra inceptos himenaeos.</p>
+                        <p class="Mainp">
+                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
+                            vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
+                        </p>
+
                         <h4>Size</h4>
                         <select id="size" name="size">
                             <option value="">Select Size</option>
@@ -52,21 +52,24 @@
                             <option value="Large">Large - $18.99</option>
                             <option value="Extra Large">Extra Large - $21.99</option>
                         </select>
+
                         <div class="card-bottomproduct">
-                            <button class="buttonproduct">Add to Cart</button>
+                            <button id="add-to-cart" class="buttonproduct" data-product="Ethiopian Sunrise">
+                                Add to Cart
+                            </button>
+                            <p class="cart-feedback" id="cart-feedback">Added to cart!</p>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+
+        <!-- Footer -->
         <footer class="footer">
             <div class="footerinner">
-
                 <div class="footerleft">
                     <img src="./Imgs/CCLogo2.png" alt="Comfort Coffee Logo" class="footerlogo">
                     <p>© 2025 Comfort Coffee</p>
                 </div>
-
                 <div class="footerright">
                     <a href="./PrivacyPolicyPage.html">Privacy Policy</a>
                     <a href="./SubscriptionPolicyPage.html">Subscription Policy</a>
@@ -74,11 +77,11 @@
                     <a href="https://www.instagram.com/">Instagram</a>
                     <a href="https://www.facebook.com/">Facebook</a>
                 </div>
-
             </div>
         </footer>
     </div>
 
+    <!-- Link to external JS -->
+    <script src="./script.js"></script>
 </body>
-
 </html>

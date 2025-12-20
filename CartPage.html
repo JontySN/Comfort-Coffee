@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Comfort Coffee - Product</title>
+    <title>Comfort Coffee - Your Cart</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="MainContainer">
 
-        <!-- Parallax Banner -->
+        <!-- Banner -->
         <div class="ParallaxContainer">
             <img class="logo" src="./Imgs/CCLogo.png">
         </div>
+
 
         <!-- Content -->
         <div class="ContentContainer">
@@ -28,40 +31,26 @@
                 </ul>
             </div>
 
-            <!-- Product Info -->
+            <!-- Cart Items -->
             <div class="contentproduct">
-                <h2 class="brownShop">Ethiopian Beans</h2>
-                <div class="productcontainer">
-                    <!-- Product Image -->
-                    <div class="cardproduct">
-                        <img class="productpicture" src="./Imgs/Coffee1.webp" alt="coffee bag">
-                    </div>
+                <h2 class="brownShop">Your Cart</h2>
+                <div id="cart-items" class="cart-items"></div>
 
-                    <!-- Product Details -->
-                    <div class="productcontainerright">
-                        <p class="Mainp">
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Quisque faucibus ex sapien
-                            vitae pellentesque sem placerat. In id cursus mi pretium tellus duis convallis.
-                        </p>
 
-                        <h4>Size</h4>
-                        <select id="size" name="size">
-                            <option value="">Select Size</option>
-                            <option value="Small">Small - $12.99</option>
-                            <option value="Medium">Medium - $15.99</option>
-                            <option value="Large">Large - $18.99</option>
-                            <option value="Extra Large">Extra Large - $21.99</option>
-                        </select>
+                <!-- Cart Summary -->
+                <div class="cart-summary">
+                    <p>Total: $<span id="cart-total">0.00</span></p>
+                    <button id="buy-now">Buy Now</button>
+                </div>
 
-                        <div class="card-bottomproduct">
-                            <button id="add-to-cart" class="buttonproduct" data-product="Ethiopian Sunrise">
-                                Add to Cart
-                            </button>
-                            <p class="cart-feedback" id="cart-feedback">Added to cart!</p>
-                        </div>
-                    </div>
+                <!-- Fake Purchase Message -->
+                <div id="purchase-message" class="purchase-message" style="display:none;">
+                    <h3>Thank you for your purchase!</h3>
+                    <img src="./Imgs/Coffee1.webp" alt="Purchased Item">
                 </div>
             </div>
+
+        </div>
 
         <!-- Footer -->
         <footer class="footer">
@@ -79,9 +68,11 @@
                 </div>
             </div>
         </footer>
+
     </div>
 
-    <!-- Link to external JS -->
+    <!-- External JS -->
     <script src="./script.js"></script>
 </body>
+
 </html>
