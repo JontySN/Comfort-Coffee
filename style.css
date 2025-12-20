@@ -269,13 +269,13 @@ a{
     ul li a {
         font-size: 28px;
         padding: 8px 10px;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
     }
 
     .brownMain, .brownShop, .brownrecipe {
         font-size: 50px;
         text-align: center;
-        letter-spacing: 5px;
+        letter-spacing: 2px;
     }
 
     .productcontainer {
