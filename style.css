@@ -106,7 +106,8 @@ ul li a:hover {
 
 .navbar {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
 .card {
@@ -610,6 +611,9 @@ input[type=submit]:hover {
         margin-top: 20px;
     }
 
+    .barrista {
+        width: 90%;
+    }
     
     .shopcontainer {
         display: grid;
@@ -652,9 +656,18 @@ input[type=submit]:hover {
         text-align: center;
     }
 
+    .cart-image-area {
+        display: flex;
+        justify-content: center;
+        padding: 5px 5px 0 5px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
     .cart-image-area img {
-        width: 200px;
-        border-radius: 16px;
+        width: 180px;
+        height: auto;
+        display: block;
     }
 
     .quantity-controls {
