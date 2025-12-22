@@ -610,8 +610,20 @@ input[type=submit]:hover {
         margin-top: 20px;
     }
 
+    
     .shopcontainer {
-        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 20px;
+        justify-items: center;
+    }
+
+    .shopcontainer > * {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        margin: 0;
+        grid-column: auto;
     }
 
     .cart-items {
