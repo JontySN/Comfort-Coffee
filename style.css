@@ -569,6 +569,10 @@ input[type=submit]:hover {
         width: 300px;
     }
 
+    .logo {
+        width: 300px;
+    }
+
 
     .banner {
         font-size: 60px;
@@ -637,7 +641,7 @@ input[type=submit]:hover {
     }
 
     .cart-image-area img {
-        width: 140px;
+        width: 200px;
         border-radius: 16px;
     }
 
