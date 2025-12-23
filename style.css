@@ -786,8 +786,15 @@ input[type=submit]:hover {
         height: auto;
     }
 
-    .recipepicture {
-        width: 80%;
+    .cardproduct {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+
+    .productpicture {
+        width: 90%;
+        max-width: 300px;
     }
 
     .recipetitle {
