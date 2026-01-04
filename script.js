@@ -103,17 +103,17 @@ function renderCart() {
             <div class="cart-item">
                 <div class="cart-image-area">
                     <img src="./Imgs/Coffee1.webp" alt="${item.name}">
-                    <div class="quantity-controls">
+                </div>
+                <div class="cart-item-details">
+                    <p><strong>${item.name}</strong></p>
+                    <p><b>Size:</b> ${item.size}</p>
+                    <p class="price"> <b>Amount:</b> ${item.quantity}</p>
+                </div>
+                <div class="quantity-controls">
                         <button onclick="decrementQuantity(${index})">-</button>
                         <span>${item.quantity}</span>
                         <button onclick="incrementQuantity(${index})">+</button>
                     </div>
-                </div>
-                <div class="cart-item-details">
-                    <p><strong>${item.name}</strong></p>
-                    <p>Size: ${item.size}</p>
-                    <p class="price"> Amount: ${item.quantity}</p>
-                </div>
                 <button class="remove-btn" onclick="removeItem(${index})">Remove</button>
             </div>
         `;

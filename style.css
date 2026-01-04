@@ -299,7 +299,7 @@ button {
     font-weight: 800;
     text-decoration: none;
     color: rgb(111, 78, 55);
-    font-size: 50px;
+    font-size: 40px;
     text-align: start;
 }
 
@@ -606,10 +606,10 @@ input[type=submit]:hover {
     }
 
     .browntitlesmall {
-        font-size: 30px;
+        font-size: 40px;
         text-align: center;
         letter-spacing: -3px;
-        padding-bottom: 10px;
+        padding-bottom: 5px;
     }
 
     .productcontainer {
@@ -752,7 +752,7 @@ input[type=submit]:hover {
     }
 
     .cart-image-area img {
-        width: 180px;
+        width: 250px;
         height: auto;
         display: block;
     }
@@ -772,19 +772,20 @@ input[type=submit]:hover {
     }
 
     .cart-item-details strong {
-        font-size: 22px;
+        font-size: 30px;
         margin-top: 6px;
+        letter-spacing: -1px;
         color: #4b2e1f;
     }
 
     .cart-summary {
         background: #ede2d8;
-        padding: 22px 18px;
+        padding: 13px 18px;
         display: flex;
         flex-direction: column;
         align-items: center;
         gap: 14px;
-        margin-bottom: 60px;
+        width: 190px;
     }
 
     .cart-summary p {
@@ -795,7 +796,7 @@ input[type=submit]:hover {
     }
 
     .cart-summary button {
-        width: 100%;
+        width: 125px;
         padding: 14px 0;
         border-radius: 999px;
         font-size: 16px;
@@ -814,18 +815,35 @@ input[type=submit]:hover {
     }
 
     .cardproduct {
+        display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 900px;
         width: 100%;
     }
 
     .productpicture {
         width: 90%;
-        max-width: 300px;
+        max-width: 600px;
     }
 
     .recipetitle {
         font-size: 24px;
+    }
+
+    .Productp {
+        display: flex;
+        margin: 40px auto 0;
+        width: 400px;
+        font-family: Open Sans;
+        align-items: center;
+        text-align: left;
+    }
+
+    .Sizetitle {
+        align-self: flex-start;
+        font-size: 20px;
+        padding-top: 20px;
     }
 }
 
