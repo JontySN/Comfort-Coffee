@@ -324,6 +324,15 @@ button {
     justify-items: center;
 }
 
+.recipecontainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 20px;
+    justify-items: center;
+}
+
+
 .card-bottom {
     display: flex;
     justify-content: center;
@@ -596,7 +605,7 @@ input[type=submit]:hover {
         line-height: 50px;
     }
 
-    .browntitlesmall{
+    .browntitlesmall {
         font-size: 50px;
         text-align: center;
         letter-spacing: -3px;
@@ -623,7 +632,7 @@ input[type=submit]:hover {
         width: 100%;
         max-width: 900px;
     }
-    
+
 
     .shopcontainer {
         display: grid;
@@ -633,7 +642,7 @@ input[type=submit]:hover {
         justify-items: stretch;
     }
 
-    .shopcontainer > * {
+    .shopcontainer>* {
         width: 100%;
         max-width: 100%;
         min-width: 0;
@@ -642,7 +651,24 @@ input[type=submit]:hover {
         grid-column: auto !important;
     }
 
-    
+    .recipecontainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 18px;
+        padding: 0 14px;
+        justify-items: stretch;
+    }
+
+    .recipecontainer>* {
+        width: 100%;
+        max-width: 100%;
+        min-width: 0;
+        margin: 0;
+        box-sizing: border-box;
+        grid-column: auto !important;
+    }
+
+
     .shopcard {
         display: flex;
         flex-direction: column;
